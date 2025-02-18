@@ -3,11 +3,22 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Värit */
+:root {
+    --pp-orange: #FF6B00;
+    --pp-orange-dark: #E65000;
+}
+
+.bg-custom {
+    background-color: var(--pp-orange);
+}
+
 /* Hero-osio */
 .hero {
     background-color: #f8f9fa;
     padding: 4rem 0;
     margin-bottom: 2rem;
+    border-bottom: 4px solid var(--pp-orange);
 }
 
 /* Navigaatio */
@@ -16,7 +27,16 @@ body {
 }
 
 .navbar-brand {
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 /* Kuvat */
@@ -53,7 +73,7 @@ body {
 }
 
 .table thead {
-    background-color: #007bff;
+    background-color: var(--pp-orange);
     color: white;
 }
 
@@ -83,23 +103,23 @@ footer {
 }
 
 .card a {
-    color: #007bff;
+    color: var(--pp-orange);
 }
 
 .card a:hover {
-    color: #0056b3;
+    color: var(--pp-orange-dark);
 }
 
 /* Uutisosio */
 .news-items .news-item {
     padding: 1rem;
-    border-left: 4px solid #007bff;
+    border-left: 4px solid var(--pp-orange);
     background-color: #f8f9fa;
     margin-bottom: 1rem;
 }
 
 .news-item h5 {
-    color: #007bff;
+    color: var(--pp-orange);
     margin-bottom: 0.5rem;
 }
 
@@ -114,4 +134,9 @@ footer {
 .team-description p {
     margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+/* Linkit */
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
 } 
