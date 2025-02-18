@@ -139,4 +139,36 @@ footer {
 /* Linkit */
 .nav-link:hover {
     color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Tilastovälilehdet */
+.nav-tabs .nav-link {
+    color: var(--pp-orange);
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--pp-orange-dark);
+    font-weight: 600;
+    border-color: var(--pp-orange) var(--pp-orange) transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+/* Tilastotaulukot */
+.table th {
+    background-color: var(--pp-orange);
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 107, 0, 0.05);
+}
+
+/* Korostetaan parhaat tulokset */
+.table tbody tr:first-child {
+    font-weight: bold;
+    background-color: rgba(255, 107, 0, 0.1);
 } 
