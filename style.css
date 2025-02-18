@@ -171,4 +171,41 @@ footer {
 .table tbody tr:first-child {
     font-weight: bold;
     background-color: rgba(255, 107, 0, 0.1);
+}
+
+/* Kuvagalleria */
+.gallery-img {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Modal */
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header {
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.btn-close {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.btn-close:hover {
+    opacity: 1;
 } 
